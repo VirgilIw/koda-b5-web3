@@ -1,0 +1,40 @@
+nav > ul {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav > ul {
+    flex-direction: row;
+  }
+}
+main {
+  border: 2px solid black;
+}
+.test {
+  display: flex;
+}
+
+.test div {
+  flex-basis: 100px;
+  flex-shrink: 0;
+  border: 2px solid black;
+  height: 100px;
+  background-color: green;
+  &:nth-child(1) {
+    flex-grow: 1;
+  }
+  &:nth-child(2) {
+    flex-grow: 2;
+  }
+  &:nth-child(3) {
+    flex-grow: 1;
+  }
+}
