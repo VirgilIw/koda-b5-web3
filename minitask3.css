@@ -67,4 +67,8 @@ button {
     order: 1;
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .scientific button:last-child {
+    grid-column: 2 / -1;
+  }
 }
